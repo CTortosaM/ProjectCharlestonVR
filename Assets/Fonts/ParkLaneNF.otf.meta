@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: d338998151665f441b08d211dd1824f5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Park Lane NF
+  fontNames:
+  - Park Lane NF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3276f3f17f8de284bb00828b409cdda7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
