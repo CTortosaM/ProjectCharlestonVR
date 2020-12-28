@@ -2,43 +2,53 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
-public class menu : MonoBehaviour
+public class ButtonEvents : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
+    public UnityEvent myEvent;  //para definir en el Editor las funciiones a ejecutar en los botones
 
+    public void m_enter()
+    {
+        //this.GetComponent<Animator>().SetTrigger("Highlighted");
+    }
+    public void m_exit()
+    {
+        //this.GetComponent<Animator>().SetTrigger("Normal");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void m_click()
     {
-        
+        //this.GetComponent<Animator>().SetTrigger("Pressed");
+        myEvent.Invoke();
     }
 
-    public void PlayButtonClick()
+    /// <summary>
+    /// Funciones de cada botón
+    /// </summary>
+    public void ButtonClickPlay()
     {
         //Codigo que cambia de escena
         //SceneManager.LoadScene("Nombre", LoadSceneMode.Single);
         Debug.Log("Play");
     }
 
-    public void InstruccionesButtonClick()
+    public void ButtonClickInstrucciones()
     {
         //Codigo que cambia de escena
         //SceneManager.LoadScene("Nombre", LoadSceneMode.Additive);
         Debug.Log("Instrucciones");
     }
     
-    public void VideoButtonClick()
+    public void ButtonClickVideo()
     {
         //Codigo que cambia de escena
         //SceneManager.LoadScene("Nombre", LoadSceneMode.Single);
         Debug.Log("Video");
     }
 
-    public void CloseButtonClick()
+    public void ButtonClickClose()
     {
         //Codigo que cierra el juego
         Debug.Log("Close");
