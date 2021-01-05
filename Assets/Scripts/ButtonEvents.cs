@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class ButtonEvents : MonoBehaviour
 {
@@ -44,8 +45,8 @@ public class ButtonEvents : MonoBehaviour
     public void ButtonClickVideo()
     {
         //Codigo que cambia de escena
-        //SceneManager.LoadScene("Nombre", LoadSceneMode.Single);
-        Debug.Log("Video");
+        SceneManager.LoadScene("video360", LoadSceneMode.Single);
+        //Debug.Log("Video");
     }
 
     public void ButtonClickClose()
