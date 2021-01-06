@@ -6,8 +6,25 @@ using UnityEngine.Events;
 
 public class ButtonEvents : MonoBehaviour
 {
+
+    [SerializeField] private GameObject menuPrincipal = null;
+    [SerializeField] private GameObject instrucciones = null;
     // Start is called before the first frame update
     public UnityEvent myEvent;  //para definir en el Editor las funciiones a ejecutar en los botones
+
+    void Start() {
+        foreach(GameObject go in Resources.FindObjectsOfTypeAll<GameObject>()){
+            if (instrucciones && menuPrincipal) {
+                return;
+            }
+            if (go.name == "MenuPrincipal") {
+                menuPrincipal = go;
+            } 
+            else if (go.name =="Instrucciones") {
+                instrucciones = go;
+            }
+        }
+    }
 
     public void m_enter()
     {
@@ -39,6 +56,8 @@ public class ButtonEvents : MonoBehaviour
         //Codigo que cambia de escena
         //SceneManager.LoadScene("Nombre", LoadSceneMode.Additive);
         Debug.Log("Instrucciones");
+        menuPrincipal.SetActive(false);
+        instrucciones.SetActive(true);
     }
     
     public void ButtonClickVideo()
@@ -53,5 +72,11 @@ public class ButtonEvents : MonoBehaviour
         //Codigo que cierra el juego
         Debug.Log("Close");
         Application.Quit();
+    }
+
+    public void ButtonReturnToMenu(){
+        Debug.Log("Return to menu");
+        menuPrincipal.SetActive(true);
+        instrucciones.SetActive(false);
     }
 }

@@ -255,6 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1686,11 +1688,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1495604574}
-        m_MethodName: ButtonClickPlay
+        m_MethodName: ButtonReturnToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1913,6 +1917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
@@ -7530,6 +7536,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
@@ -7690,6 +7698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
