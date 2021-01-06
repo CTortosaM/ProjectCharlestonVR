@@ -8,20 +8,25 @@ public class ButtonEvents : MonoBehaviour
 {
 
     [SerializeField] private GameObject menuPrincipal = null;
-    [SerializeField] private GameObject instrucciones = null;
+    [SerializeField] private GameObject instrucciones_agarrar = null;
+    private GameObject instrucciones_moverse = null;
     // Start is called before the first frame update
     public UnityEvent myEvent;  //para definir en el Editor las funciiones a ejecutar en los botones
 
     void Start() {
         foreach(GameObject go in Resources.FindObjectsOfTypeAll<GameObject>()){
-            if (instrucciones && menuPrincipal) {
+            if (instrucciones_agarrar && menuPrincipal) {
                 return;
             }
             if (go.name == "MenuPrincipal") {
                 menuPrincipal = go;
             } 
-            else if (go.name =="Instrucciones") {
-                instrucciones = go;
+            else if (go.name =="Agarrar_Instrucciones") {
+                instrucciones_agarrar = go;
+            }
+
+            else if (go.name == "Moverse_Instrucciones") {
+                instrucciones_moverse = go;
             }
         }
     }
@@ -56,8 +61,9 @@ public class ButtonEvents : MonoBehaviour
         //Codigo que cambia de escena
         //SceneManager.LoadScene("Nombre", LoadSceneMode.Additive);
         Debug.Log("Instrucciones");
+        instrucciones_agarrar.SetActive(true);
+        instrucciones_moverse.SetActive(false);
         menuPrincipal.SetActive(false);
-        instrucciones.SetActive(true);
     }
     
     public void ButtonClickVideo()
@@ -77,6 +83,13 @@ public class ButtonEvents : MonoBehaviour
     public void ButtonReturnToMenu(){
         Debug.Log("Return to menu");
         menuPrincipal.SetActive(true);
-        instrucciones.SetActive(false);
+        instrucciones_agarrar.SetActive(false);
+        instrucciones_moverse.SetActive(false);
+    }
+
+    public void ButtonInstruccionMovimiento(){
+        instrucciones_moverse.SetActive(true);
+        instrucciones_agarrar.SetActive(false);
+        menuPrincipal.SetActive(false);
     }
 }
