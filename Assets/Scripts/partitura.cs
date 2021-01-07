@@ -37,9 +37,11 @@ void Start(){
 IEnumerator waiter()
 {
     text.SetActive(true);
+    text.transform.parent.gameObject.SetActive(true);
      text.GetComponent<Text>().text = "This is some beautiful music, sounds like Chopin.";
     yield return new WaitForSeconds(5);
 	text.SetActive(false);
+	text.transform.parent.gameObject.SetActive(false);
      text.GetComponent<Text>().text = "";
 }
 }

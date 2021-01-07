@@ -26,9 +26,11 @@ public class metropolis : MonoBehaviour
 IEnumerator waiter()
 {
     text.SetActive(true);
+    text.transform.parent.gameObject.SetActive(true);
      text.GetComponent<Text>().text = "Metropolis, a good film indeed.";
     yield return new WaitForSeconds(5);
 	text.SetActive(false);
+text.transform.parent.gameObject.SetActive(false);
      text.GetComponent<Text>().text = "";
 }
 }

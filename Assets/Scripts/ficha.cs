@@ -39,9 +39,11 @@ IEnumerator waiter()
     yield return new WaitForSeconds(3);
     
     text.SetActive(true);
+    text.transform.parent.gameObject.SetActive(true);
      text.GetComponent<Text>().text = "To be continued...";
     yield return new WaitForSeconds(5);
 	text.SetActive(false);
+	text.transform.parent.gameObject.SetActive(false);
      text.GetComponent<Text>().text = "";
 	SceneManager.LoadScene("MenuPrincipal", LoadSceneMode.Single);
 }
