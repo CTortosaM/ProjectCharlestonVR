@@ -144,14 +144,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33418369}
-  m_LocalRotation: {x: -0.01716607, y: -0.98140246, z: -0.15926614, w: 0.10577783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0667135, y: 0.050807774, z: -0.3058873}
   m_LocalScale: {x: 1.0000006, y: 1.0000001, z: 1.0000004}
   m_Children:
   - {fileID: 264780321}
   m_Father: {fileID: 0}
   m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: -18.436, y: -167.697, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &42557606
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +623,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264780320}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.706, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 770440221}
@@ -1101,6 +1101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones_agarrar: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1641,6 +1643,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones_agarrar: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1699,6 +1703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones_agarrar: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1744,6 +1750,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones_agarrar: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1802,14 +1810,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770440220}
-  m_LocalRotation: {x: -0.013775428, y: -0.98514885, z: -0.029719308, w: -0.16854928}
-  m_LocalPosition: {x: 0.00000016391277, y: 0.98999953, z: -0.0000045597553}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 42557607}
   m_Father: {fileID: 264780321}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -3.0900002, y: -199.47499, z: 2.1330001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &770440222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2403,6 +2411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones_agarrar: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
@@ -3042,6 +3052,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones_agarrar: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
@@ -3205,6 +3217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones_agarrar: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
@@ -3252,6 +3266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc0a1d9f3d3f504ebf4e69e480559a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrincipal: {fileID: 0}
+  instrucciones_agarrar: {fileID: 0}
   myEvent:
     m_PersistentCalls:
       m_Calls:
