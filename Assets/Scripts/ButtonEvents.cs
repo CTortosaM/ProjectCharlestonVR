@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class ButtonEvents : MonoBehaviour
 {
@@ -52,7 +53,7 @@ public class ButtonEvents : MonoBehaviour
     public void ButtonClickPlay()
     {
         //Codigo que cambia de escena
-        //SceneManager.LoadScene("Nombre", LoadSceneMode.Single);
+        SceneManager.LoadScene("Despacho", LoadSceneMode.Single);
         Debug.Log("Play");
     }
 
@@ -69,8 +70,8 @@ public class ButtonEvents : MonoBehaviour
     public void ButtonClickVideo()
     {
         //Codigo que cambia de escena
-        //SceneManager.LoadScene("Nombre", LoadSceneMode.Single);
-        Debug.Log("Video");
+        SceneManager.LoadScene("video360", LoadSceneMode.Single);
+        //Debug.Log("Video");
     }
 
     public void ButtonClickClose()
@@ -92,4 +93,11 @@ public class ButtonEvents : MonoBehaviour
         instrucciones_agarrar.SetActive(false);
         menuPrincipal.SetActive(false);
     }
+    public void DoorBackToMenu()
+    {
+
+	SceneManager.LoadScene("MenuPrincipal", LoadSceneMode.Single);
+    }
+
+
 }

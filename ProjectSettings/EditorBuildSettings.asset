@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuPrincipal.unity
     guid: 3acfe079140e627428767b793b3cedc1
+  - enabled: 1
+    path: Assets/Scenes/video360.unity
+    guid: 392d5efc27089e248b9795330a5ae8a2
+  - enabled: 1
+    path: Assets/Scenes/Despacho.unity
+    guid: 031c9b7cb3b3f974ab04db7538105009
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 515789919e4042f4f887d3368aebaeb9,
       type: 2}
