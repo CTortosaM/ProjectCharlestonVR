@@ -18,5 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Despacho.unity
     guid: 031c9b7cb3b3f974ab04db7538105009
   m_configObjects:
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: a39b5b8c7723aab478daf63c748344a3,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 515789919e4042f4f887d3368aebaeb9,
       type: 2}
