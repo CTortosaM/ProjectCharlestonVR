@@ -43,22 +43,22 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: uv_cintaPeliculaHierro2
-    second: {fileID: 2800000, guid: be3c981d021ee3e45aad96cbee4ae421, type: 3}
+    second: {fileID: 2800000, guid: dc05b15f63a2a6942bb1f778e856989a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: uv_detallesDorados2
-    second: {fileID: 2800000, guid: 1b288d41df44d434e8c681b16b3cb7e7, type: 3}
+    second: {fileID: 2800000, guid: 0d23c0a62d2f2f742b2e8bf10c70660f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: uv_metalNegroProyector2
-    second: {fileID: 2800000, guid: 9f0948997c5020c44a355a5703c769a0, type: 3}
+    second: {fileID: 2800000, guid: 4c6e741c15e4cb14aa4cd52d99d219c1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: uv_metalNegroProyector3
-    second: {fileID: 2800000, guid: 48b97bd0bbad22e49915c232da502e89, type: 3}
+    second: {fileID: 2800000, guid: 7165aa387583d1a44a432627bfe193c2, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
