@@ -161,7 +161,7 @@
       "url": "https://packages.unity.com"
     },
     "com.valvesoftware.unity.openvr": {
-      "version": "file:C:/Users/carlos/Documents/steamPlugin/package",
+      "version": "file:./steamPlugin/package",
       "depth": 0,
       "source": "local",
       "dependencies": {
