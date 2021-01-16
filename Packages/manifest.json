@@ -13,7 +13,7 @@
     "com.unity.visualeffectgraph": "7.3.1",
     "com.unity.xr.googlevr.android": "2.0.0",
     "com.unity.xr.management": "3.2.16",
-    "com.valvesoftware.unity.openvr": "file:C:/Users/carlos/Documents/steamPlugin/package",
+    "com.valvesoftware.unity.openvr": "file:./steamPlugin/package",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
