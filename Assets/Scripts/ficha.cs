@@ -10,13 +10,23 @@ public class ficha: MonoBehaviour
     public GameObject audioManager;
     private AudioSource music;
     public GameObject apofis;
- 
+    public GameObject desaparecer;
+    public GameObject animar;
+    private Animator animator;
+    //public UnityEvent seHaRotoElMuro;
+
     
 
 void Start(){
 
     music=audioManager.GetComponents<AudioSource>()[1];
+    animator= animar.GetComponent<Animator>();
 
+}
+
+ public void Update(){
+
+ if(Input.GetKeyDown(KeyCode.Space)){play();}
 }
 
  public void play ()
@@ -36,7 +46,13 @@ IEnumerator waiter()
 {
     apofis.SetActive(false);
     music.Play();
-    yield return new WaitForSeconds(3);
+    //yield return new WaitForSeconds(3);
+    
+
+
+    desaparecer.SetActive(false);
+    animator.Play("Take 001");
+    //seHaRotoElMuro.Invoke();
     
     text.SetActive(true);
     text.transform.parent.gameObject.SetActive(true);
@@ -45,7 +61,7 @@ IEnumerator waiter()
 	text.SetActive(false);
 	text.transform.parent.gameObject.SetActive(false);
      text.GetComponent<Text>().text = "";
-	SceneManager.LoadScene("MenuPrincipal", LoadSceneMode.Single);
+	//SceneManager.LoadScene("MenuPrincipal", LoadSceneMode.Single);
 }
 }
 
