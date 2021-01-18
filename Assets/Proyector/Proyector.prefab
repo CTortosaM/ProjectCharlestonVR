@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3777766401250036244}
   - component: {fileID: 5057312196868575401}
   - component: {fileID: 3652735374971078715}
+  - component: {fileID: 6766198435978954251}
   m_Layer: 0
   m_Name: Proyector
   m_TagString: Untagged
@@ -72,6 +73,7 @@ MonoBehaviour:
   proyectorSeParaAudio: {fileID: 8300000, guid: dab8be0dcd1c597418d34c50c7034ac6,
     type: 3}
   estaEncendido: 1
+  sePuedeApagar: 1
   seHaApagadoElProyector:
     m_PersistentCalls:
       m_Calls: []
@@ -171,6 +173,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &6766198435978954251
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4494500651789193658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14, y: 0.09, z: 0.06}
+  m_Center: {x: -0.3, y: 0, z: 0.07}
 --- !u!1 &6170696731968956754
 GameObject:
   m_ObjectHideFlags: 0

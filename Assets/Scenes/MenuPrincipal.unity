@@ -533,7 +533,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   longitud: 4.8
-  cursor: {fileID: 1447170779}
   speed: 0.5
 --- !u!114 &169487037
 MonoBehaviour:
@@ -1233,6 +1232,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5057312196868575401, guid: 747791269d9c9f7448a8c52095ca66a5,
+        type: 3}
+      propertyPath: sePuedeApagar
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5312532765870215595, guid: 747791269d9c9f7448a8c52095ca66a5,
         type: 3}
@@ -3021,6 +3025,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561684581}
   m_CullTransparentMesh: 0
+--- !u!1 &1619805717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4494500651789193658, guid: 747791269d9c9f7448a8c52095ca66a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 850462087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1619805718
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619805717}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
 --- !u!1 &1634720743
 GameObject:
   m_ObjectHideFlags: 0
@@ -9169,6 +9195,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3869543097715573606, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
+        type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7610581786503960162, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9187,22 +9218,22 @@ PrefabInstance:
     - target: {fileID: 7610581786503960162, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7610581786503960162, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.14388728
       objectReference: {fileID: 0}
     - target: {fileID: 7610581786503960162, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7610581786503960162, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.98959404
       objectReference: {fileID: 0}
     - target: {fileID: 7610581786503960162, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
         type: 3}
@@ -9217,12 +9248,47 @@ PrefabInstance:
     - target: {fileID: 7610581786503960162, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 16.546001
       objectReference: {fileID: 0}
     - target: {fileID: 7610581786503960162, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610581786504252372, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610581786504278322, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Mano
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610581786504308738, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Mano
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610581786504309080, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Mano
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610581786504332466, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Mano
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610581786504333892, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Mano
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610581786504340462, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Mano
       objectReference: {fileID: 0}
     - target: {fileID: 7610581786504359476, guid: 39cdcdbddf257ab4bad01ff303cb9dbf,
         type: 3}
