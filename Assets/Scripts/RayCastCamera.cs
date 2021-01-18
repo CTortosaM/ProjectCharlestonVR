@@ -7,7 +7,7 @@ public class RayCastCamera : MonoBehaviour
     //public Transform player;
     public float longitud; //del rayo
     //public Animator miraAnim; //no para selección por tiempo, solo para animar un cursor, acutalmente oculto
-    public UnityEngine.UI.Image cursor; //cursor con el progreso
+    //public UnityEngine.UI.Image cursor; //cursor con el progreso
     public float speed = 1.0f;  //velocidad del progreso
     private float currentProgress = 0; // variable para almacenar el progeso del cursor, de 0 a 1
     private GameObject gaze; //objeto para almacenar el objeto tocado
@@ -44,7 +44,8 @@ public class RayCastCamera : MonoBehaviour
             sendClick();
         }
 
-        manageCursor(); //progreso del cursor y click
+        //manageCursor(); //progreso del cursor y click
+        sendClick();
     }
 
     public void sendClick()
@@ -63,7 +64,7 @@ public class RayCastCamera : MonoBehaviour
             {
 
                 currentProgress += speed * Time.deltaTime;
-                cursor.fillAmount = currentProgress;
+                //cursor.fillAmount = currentProgress;
             }
             else
             {
@@ -79,7 +80,7 @@ public class RayCastCamera : MonoBehaviour
         else
         {
             currentProgress = 0;
-            cursor.fillAmount = currentProgress;
+            //cursor.fillAmount = currentProgress;
         }
     }
 }

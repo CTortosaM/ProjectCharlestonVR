@@ -12,6 +12,7 @@ public class Proyector : MonoBehaviour
     private AudioSource audioSource;
 
     [SerializeField] private bool estaEncendido = true;
+    [SerializeField] private bool sePuedeApagar = true;
 
     public bool EstaEncendido { get => estaEncendido;}
     public UnityEvent seHaApagadoElProyector;
@@ -55,5 +56,10 @@ public class Proyector : MonoBehaviour
 
     private void seApaga() {
         Debug.Log("Se ha apagado el proyector");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Mano" && sePuedeApagar && estaEncendido) Apagar();
     }
 }
