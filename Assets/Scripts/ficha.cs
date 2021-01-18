@@ -46,7 +46,7 @@ IEnumerator waiter()
 {
     apofis.SetActive(false);
     music.Play();
-    //yield return new WaitForSeconds(3);
+    yield return new WaitForSeconds(5);
     
 
 
