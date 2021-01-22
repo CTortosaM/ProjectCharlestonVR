@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8073481195005405245}
   m_Layer: 0
-  m_Name: player
+  m_Name: PlayerClimb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,50 +33,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8073481196198859477
+--- !u!114 &8073481196198859478
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8073481196198749134}
+  m_GameObject: {fileID: 8073481196198745044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93ab9066e8186884da64ee239717c741, type: 3}
+  m_Script: {fileID: 11500000, guid: 170059b44b050a84aa94d4a5b33322b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_combineInputsOperator: 0
-  m_inputs:
-  - viveRole:
-      m_roleTypeFullName: HTC.UnityPlugin.Vive.HandRole
-      m_roleValueName: RightHand
-      m_roleValueInt: 0
-    button: 0
-  m_onVirtualPress:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8073481196198859478}
-        m_MethodName: setPos
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onVirtualClick:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onVirtualPressDown:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onVirtualPressUp:
-    m_PersistentCalls:
-      m_Calls: []
-  m_toggleGameObjectOnVirtualClick: []
-  m_toggleComponentOnVirtualClick: []
+  player: {fileID: 8073481195005405246}
+  controller: {fileID: 8073481196198706772}
+  prevPos: {x: 0, y: 0, z: 0}
+  bCanGrip: 0
 --- !u!114 &8073481196198859476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,22 +93,50 @@ MonoBehaviour:
       m_Calls: []
   m_toggleGameObjectOnVirtualClick: []
   m_toggleComponentOnVirtualClick: []
---- !u!114 &8073481196198859478
+--- !u!114 &8073481196198859477
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8073481196198745044}
+  m_GameObject: {fileID: 8073481196198749134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 170059b44b050a84aa94d4a5b33322b1, type: 3}
+  m_Script: {fileID: 11500000, guid: 93ab9066e8186884da64ee239717c741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 8073481195005405246}
-  controller: {fileID: 8073481196198706772}
-  prevPos: {x: 0, y: 0, z: 0}
-  bCanGrip: 0
+  m_combineInputsOperator: 0
+  m_inputs:
+  - viveRole:
+      m_roleTypeFullName: HTC.UnityPlugin.Vive.HandRole
+      m_roleValueName: RightHand
+      m_roleValueInt: 0
+    button: 0
+  m_onVirtualPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8073481196198859478}
+        m_MethodName: setPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onVirtualClick:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onVirtualPressDown:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onVirtualPressUp:
+    m_PersistentCalls:
+      m_Calls: []
+  m_toggleGameObjectOnVirtualClick: []
+  m_toggleComponentOnVirtualClick: []
 --- !u!114 &8073481196198859479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +206,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071970, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071970, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071970, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071970, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
