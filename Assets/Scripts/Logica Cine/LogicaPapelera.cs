@@ -27,4 +27,16 @@ public class LogicaPapelera : MonoBehaviour
             //Añadir a contador papelera
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Ficha_Senet"))
+        {
+            //Descambiar el proyector
+        }
+        else
+        {
+            //Descontar contador papelera en -1
+        }
+    }
 }
