@@ -17,51 +17,45 @@ public class ficha: MonoBehaviour
 
     
 
-void Start(){
+    void Start(){
 
-    music=audioManager.GetComponents<AudioSource>()[1];
-    animator= animar.GetComponent<Animator>();
+        music=audioManager.GetComponents<AudioSource>()[1];
+        animator= animar.GetComponent<Animator>();
 
-}
+    }
 
- public void Update(){
+    public void Update(){
 
- if(Input.GetKeyDown(KeyCode.Space)){play();}
-}
+    }
 
- public void play ()
- {
-     
-	
-     
-	
-	StartCoroutine(waiter());
-	
-
- }
-
- 
-
-IEnumerator waiter()
-{
-    apofis.SetActive(false);
-    music.Play();
-    yield return new WaitForSeconds(5);
+    IEnumerator waiter()
+    {
+        apofis.SetActive(false);
+        music.Play();
+        yield return new WaitForSeconds(5);
     
 
 
-    desaparecer.SetActive(false);
-    animator.Play("Take 001");
-    //seHaRotoElMuro.Invoke();
+        desaparecer.SetActive(false);
+        animator.Play("Take 001");
+        //seHaRotoElMuro.Invoke();
     
-    text.SetActive(true);
-    text.transform.parent.gameObject.SetActive(true);
-     text.GetComponent<Text>().text = "To be continued...";
-    yield return new WaitForSeconds(5);
-	text.SetActive(false);
-	text.transform.parent.gameObject.SetActive(false);
-     text.GetComponent<Text>().text = "";
-	//SceneManager.LoadScene("MenuPrincipal", LoadSceneMode.Single);
-}
+        text.SetActive(true);
+        text.transform.parent.gameObject.SetActive(true);
+        text.GetComponent<Text>().text = "To be continued...";
+        yield return new WaitForSeconds(5);
+	    text.SetActive(false);
+	    text.transform.parent.gameObject.SetActive(false);
+        text.GetComponent<Text>().text = "";
+	    //SceneManager.LoadScene("MenuPrincipal", LoadSceneMode.Single);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Ficha_Senet"))
+        {
+            StartCoroutine(waiter());
+        }
+    }
 }
 
