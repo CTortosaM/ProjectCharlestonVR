@@ -21,10 +21,12 @@ public class LogicaPapelera : MonoBehaviour
         if (other.CompareTag("Ficha_Senet"))
         {
             //Cambiar proyector
+            print("Trigger papelera");
         }
         else
         {
             //Añadir a contador papelera
+            print("+1");
         }
     }
 
@@ -33,10 +35,12 @@ public class LogicaPapelera : MonoBehaviour
         if (other.CompareTag("Ficha_Senet"))
         {
             //Descambiar el proyector
+            print("DesTrigger papelera");
         }
         else
         {
             //Descontar contador papelera en -1
+            print("-1");
         }
     }
 }
