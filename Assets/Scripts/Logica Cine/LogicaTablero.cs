@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ficha: MonoBehaviour
+public class LogicaTablero: MonoBehaviour
 {
     public GameObject text;
     public GameObject audioManager;
