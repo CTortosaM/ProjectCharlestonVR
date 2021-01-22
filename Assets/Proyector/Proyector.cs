@@ -23,7 +23,7 @@ public class Proyector : MonoBehaviour
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
 
-        seHaApagadoElProyector.AddListener(seApaga);
+        //seHaApagadoElProyector.AddListener(seApaga);
     }
     void Start()
     {
@@ -45,21 +45,13 @@ public class Proyector : MonoBehaviour
         this.audioSource.Play();
 
 
-        StartCoroutine("AnunciarApagado");
-    }
-
-    private IEnumerator AnunciarApagado() {
-        yield return new WaitForSeconds(2);
-
-        seHaApagadoElProyector.Invoke();
-    }
-
-    private void seApaga() {
-        Debug.Log("Se ha apagado el proyector");
+        //StartCoroutine("AnunciarApagado");
+        this.seHaApagadoElProyector.Invoke();
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.name);
         if (other.gameObject.tag == "Mano" && sePuedeApagar && estaEncendido) Apagar();
     }
 }

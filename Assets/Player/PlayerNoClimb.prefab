@@ -1465,6 +1465,7 @@ GameObject:
   - component: {fileID: 7610581786503975344}
   - component: {fileID: 7610581786509455346}
   - component: {fileID: 7610581786494017190}
+  - component: {fileID: 5296174731377557470}
   m_Layer: 0
   m_Name: Caster
   m_TagString: Untagged
@@ -1527,6 +1528,22 @@ MonoBehaviour:
   m_additionalButtons: 0
   m_scrollType: 0
   m_scrollDeltaScale: {x: 1, y: -1}
+--- !u!114 &5296174731377557470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610581786504288968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170059b44b050a84aa94d4a5b33322b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7610581786504359476}
+  controller: {fileID: 7610581786504308738}
+  prevPos: {x: 0, y: 0, z: 0}
+  bCanGrip: 0
 --- !u!1 &7610581786504289260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,6 +1834,7 @@ GameObject:
   - component: {fileID: 7610581786504042694}
   - component: {fileID: 7610581786509539586}
   - component: {fileID: 7610581786494040464}
+  - component: {fileID: 1982827806467149933}
   m_Layer: 0
   m_Name: Caster
   m_TagString: Untagged
@@ -1879,6 +1897,22 @@ MonoBehaviour:
   m_additionalButtons: 0
   m_scrollType: 0
   m_scrollDeltaScale: {x: 1, y: -1}
+--- !u!114 &1982827806467149933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610581786504290820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170059b44b050a84aa94d4a5b33322b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7610581786504359476}
+  controller: {fileID: 7610581786504309080}
+  prevPos: {x: 0, y: 0, z: 0}
+  bCanGrip: 0
 --- !u!1 &7610581786504291284
 GameObject:
   m_ObjectHideFlags: 0
@@ -4800,7 +4834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7610581786503960162}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerNoClimb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
