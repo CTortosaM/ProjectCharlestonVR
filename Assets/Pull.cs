@@ -23,7 +23,11 @@ public class Pull : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        bCanGrip = true; //trepa sobre cualquier elemento con collider del escenario
+
+        if (other.gameObject.layer == 9) {
+            bCanGrip = true; //trepa sobre cualquier elemento con collider del escenario
+
+        }
         //si se quiere designar ciertos elementos como "trepables", crear un Layer nuevo, por ejemplo el 9, con nombre trepable
         //asignar dicho layer solo al objeto sobre el que se quiera trepar y por último
         //comentar la línea 26 y descomentar el siguiente código
@@ -34,6 +38,9 @@ public class Pull : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        bCanGrip = false;   
+        if (other.gameObject.layer == 9) {
+            bCanGrip = false;   
+
+        }
     }
 }
