@@ -1,0 +1,61 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class LogicaTablero: MonoBehaviour
+{
+    public GameObject text;
+    public GameObject audioManager;
+    private AudioSource music;
+    public GameObject apofis;
+    public GameObject desaparecer;
+    public GameObject animar;
+    private Animator animator;
+    //public UnityEvent seHaRotoElMuro;
+
+    
+
+    void Start(){
+
+        music=audioManager.GetComponents<AudioSource>()[1];
+        animator= animar.GetComponent<Animator>();
+
+    }
+
+    public void Update(){
+
+    }
+
+    IEnumerator waiter()
+    {
+        apofis.SetActive(false);
+        music.Play();
+        yield return new WaitForSeconds(5);
+    
+
+
+        desaparecer.SetActive(false);
+        animator.Play("Take 001");
+        //seHaRotoElMuro.Invoke();
+    
+        text.SetActive(true);
+        text.transform.parent.gameObject.SetActive(true);
+        text.GetComponent<Text>().text = "To be continued...";
+        yield return new WaitForSeconds(5);
+	    text.SetActive(false);
+	    text.transform.parent.gameObject.SetActive(false);
+        text.GetComponent<Text>().text = "";
+	    //SceneManager.LoadScene("MenuPrincipal", LoadSceneMode.Single);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Ficha_Senet"))
+        {
+            StartCoroutine(waiter());
+        }
+    }
+}
+
