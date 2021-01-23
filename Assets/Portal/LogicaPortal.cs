@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SonarTambor : MonoBehaviour
+public class LogicaPortal : MonoBehaviour
 {
-    public AudioSource audioSource;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +19,6 @@ public class SonarTambor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Mano"))
-        {
-            audioSource.Play();
-        }
+        SceneManager.LoadScene("MenuPrincipal", LoadSceneMode.Single);
     }
 }
