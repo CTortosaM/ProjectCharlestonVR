@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Mano
   - Ficha_Senet
+  - Papelera
   layers:
   - Default
   - TransparentFX
