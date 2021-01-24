@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 2666959929624822131}
   - component: {fileID: 7865097913008163657}
   - component: {fileID: 7135988156723239711}
+  - component: {fileID: 289958583576454433}
   m_Layer: 0
   m_Name: Silla_Unity
   m_TagString: Untagged
@@ -333,6 +334,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &289958583576454433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3335233564681526217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3daf1d79a0166364e9f79ba8bfbc33a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8073481195005405246, guid: 821594472815e7e4a9288980d9e29774, type: 3}
 --- !u!1 &5489433474783645838
 GameObject:
   m_ObjectHideFlags: 0

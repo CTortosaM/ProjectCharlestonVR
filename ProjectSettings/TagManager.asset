@@ -7,6 +7,8 @@ TagManager:
   - Mano
   - Ficha_Senet
   - Papelera
+  - NoTriggerPapelera
+  - pegarTambor
   layers:
   - Default
   - TransparentFX
