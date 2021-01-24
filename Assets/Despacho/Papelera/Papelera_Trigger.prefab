@@ -157,7 +157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2647d55fc551fc458cd24ea2b4811b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoContador: {fileID: 0}
+  textoContador: {fileID: 7984814515638892144}
+  proyector: {fileID: 4494500651789193658, guid: 747791269d9c9f7448a8c52095ca66a5,
+    type: 3}
+  robotRustCore: {fileID: 0}
 --- !u!1 &3694650882292693396
 GameObject:
   m_ObjectHideFlags: 0

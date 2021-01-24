@@ -15,7 +15,7 @@ public class LogicaPapelera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textoContador = GetComponentInChildren<Text>();
+       // textoContador = GetComponentInChildren<Text>();
         _contador = 0;
     }
 
