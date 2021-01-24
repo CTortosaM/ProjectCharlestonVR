@@ -27,7 +27,7 @@ public class LogicaPapelera : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Ficha_Senet"))
+        if (other.CompareTag("EasterEgg"))
         {
             //Cambiar proyector
             proyector.SetActive(false);
@@ -50,7 +50,7 @@ public class LogicaPapelera : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Ficha_Senet"))
+        if (other.CompareTag("EasterEgg"))
         {
             //Descambiar el proyector
             proyector.SetActive(true);
