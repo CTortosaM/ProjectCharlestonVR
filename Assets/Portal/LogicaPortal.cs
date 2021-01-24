@@ -45,12 +45,7 @@ public class LogicaPortal : MonoBehaviour
 
         fundidoABlancoCanvas.gameObject.SetActive(false);
         cuadradoFundido.GetComponent<Image>().color = new Color(objectColor.r, objectColor.g, objectColor.b, 0);
-        if (fundidoABlancoCanvas.gameObject.activeSelf == false)
-        {
-            SceneManager.LoadScene("MenuPrincipal");
-            yield return null;
-        }
-
+        SceneManager.LoadScene("MenuPrincipal");
     }
 
 }
